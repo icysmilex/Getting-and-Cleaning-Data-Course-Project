@@ -28,7 +28,7 @@ combined <- cbind(x_dataset,y_dataset,sub_dataset)
 
 # qns 2: Extracts only the measurements on the mean and standard deviation for each measurement.
 colNames <- colnames(combined)
-meansd = (grepl("activityID" , colNames) | grepl("subjectID" , colNames) | grepl("mean.." , colNames) | grepl("std.." , colNames))
+meansd <- (grepl("activityID" , colNames) | grepl("subjectID" , colNames) | grepl("mean.." , colNames) | grepl("std.." , colNames))
 meansd <- combined[ , meansd == TRUE]
 
 #qns 3: Uses descriptive activity names to name the activities in the data set
